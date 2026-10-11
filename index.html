@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+<style>
+    
+    
+    .nav{
+        width: 100%;
+        height: 50px;
+        margin-left: -5px;
+        position: fixed;
+        margin-top: -8px;
+        z-index: 1;
+        background-color: white;
+        
+
+    }
+    .nav input{
+        height: 40px;
+        width: 500px;
+        margin-left: 260px;
+        margin-top: 6px;
+        border-radius: 30px;
+        border: 1px solid rgb(153, 151, 151);
+        font-size: 16px;
+        
+        
+    }
+    .nav P{
+        display: inline;
+        margin-left: 15px;
+
+    }
+    
+    h2{
+        display: inline;
+        margin-left: 1px;
+        margin-top: 5px;
+        color: black;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 22px;
+        
+    }
+    #h2{
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    .sidebar{
+        width: 17%;
+        height: 100vh;
+        margin-left: -3px;
+        margin-top: 40px;
+        position: fixed;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        
+    }
+    .sidebar a{
+        text-decoration: none;
+        color: black;
+    }
+    .options{
+        margin-top: 20px;
+        
+        
+        
+     
+    }
+    .options a{
+        display: block;
+        margin-left: 15px;
+        height: 40px;
+        font-size: 14px;
+        
+        
+        
+    }
+
+    .options p{
+        display: inline;
+        padding-right: 20px;
+        
+        
+        
+    }
+    .sidebar a:hover{
+        
+        background-color: rgb(223, 219, 219);
+        width: 90%;
+        height: 40px;  
+        border-radius: 5px;      
+        display: flex;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .sigin{
+        margin-left: 25px;
+        margin-top: -30px;
+        font-size: 15px;
+    }
+    #s{
+        border: 1px solid rgb(212, 212, 212);
+        color: rgb(44, 154, 241);
+        border-radius: 20px;
+        width: 95px;
+        height: 35px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        
+    }
+  
+    
+    .moreoptions{
+        margin-left: 15px;
+    }
+    .moreoptions a{
+        display: block;
+        height: 40px;
+    }
+    .sidebar:hover{
+        overflow-y: auto;
+        
+    }
+    .moreoptions p{
+        display: inline;
+        padding-right: 20px;
+    }
+    .youtube p{
+         display: inline;
+        padding-right: 20px;
+    }
+    
+    .youtube{
+         margin-left: 15px;
+         
+    }
+    .youtube a{
+        display: block;
+        height: 40px;
+        font-size: 15px;
+    }
+    #dote{
+        margin-left: 200px;
+       }
+    #j{
+       border: 1px solid rgb(212, 212, 212);
+        color: rgb(44, 154, 241);
+        border-radius: 20px;
+        width: 95px;
+        height: 35px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 1220px;
+        top: -5px;
+        
+    }
+    #report{
+        display: inline;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .container{
+        
+        gap: 10px;
+        width: 80%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 80px;
+        left: 17%;
+        z-index: -1;
+    
+    }
+    h3{
+        font-size: 17px;
+    }
+    .cards1{
+        display: flex;
+    }
+    .cards2{
+        display: flex;
+    }
+    .cards3{
+        display: flex;
+    }
+    .card1{
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card1 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card1 a{
+        text-decoration: none;
+        color: black;
+    }
+    .card1:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+
+    .card2{
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card2:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card2 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card2 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .card3{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card3:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card3 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card3 a{
+        text-decoration: none;
+        color: black;
+    }
+    .card4{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card4:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card4 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card4 a{
+        text-decoration: none;
+        color: black;
+    }
+    .card5{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card5:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card5 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card5 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    
+
+
+    .card6{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card6:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card6 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card6 a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .card6{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card6:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card6 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card6 a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .card7{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card7:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card7 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card7 a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .card8{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card8:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card8 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card8 a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+    .card9{
+    
+        width: 320px;
+        height: 330px;
+        margin-top: 30px;
+        margin-left: 30px;
+
+
+    }
+    .card9:hover{
+        
+        width: 320px;
+        height: 330px;
+        background-color: rgb(228, 226, 226);
+        border-radius: 10px;
+    }
+    .card9 img{
+        width: 320px;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card9 a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+    
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <a href=""><p><i class="fa-solid fa-bars fa-xl" style="color: rgb(0, 0, 0);"></i></p></a>
+            <a href="" id="h2"><i class="fa-brands fa-youtube fa-xl" style="color: rgb(249, 0, 0);"></i><h2>YouTube</h2></a>
+            <input type="search" placeholder="Search">
+            <a href=""><i class="fa-solid fa-magnifying-glass fa-lg" style="color: rgb(0, 0, 0);"></i></a>
+            <a href=""><i class="fa-light fa-microphone fa-lg" style="color: rgb(0, 0, 0);"></i></a>
+            <a href="" id="dote"><i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: rgb(0, 0, 0);"></i></a>
+            <a href=""><p id="j"><i class="fa-regular fa-circle-user fa-lg" style="color: rgb(44, 154, 241);"></i>Sign in</p></a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <div class="options">
+        
+
+        <a href=""><p><i class="fa-solid fa-house fa-xl" style="color: rgb(0, 0, 0);"></i></p>Home</a>
+        <a href=""><p><i class="fa-brands fa-youtube-shorts fa-xl" style="color: rgb(0, 0, 0);"></i></p>Shorts</a>
+        <a href=""><p><i class="fa-solid fa-photo-film fa-xl" style="color: rgb(0, 0, 0);"></i></p>Supscriptions</a>
+        <a href=""><p><i class="fa-regular fa-circle-user fa-xl" style="color: rgb(0, 0, 0);"></i></p>You</a>
+        <a href=""><p><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: rgb(0, 0, 0);"></i></p>History</a>
+        </div>
+        <hr>
+        <div class="sigin">
+        <br><p>Sign in to like videos, comment, and subscribe</p>
+        <a href=""><p id="s"><i class="fa-regular fa-circle-user fa-lg" style="color: rgb(44, 154, 241);"></i>Sign in</p></a>
+        </div><hr>
+        <div class="moreoptions">        
+        
+        <h3>Explore</h3>
+        <a href=""><p><i class="fa-solid fa-music fa-xl" style="color: rgb(0, 0, 0);"></i></p>Music</a>
+        <a href=""><p><i class="fa-chisel fa-regular fa-gamepad fa-xl" style="color: rgb(0, 0, 0);"></i></p>Gaming</a>
+        <a href=""><p><i class="fa-slab fa-regular fa-newspaper fa-xl" style="color: rgb(0, 0, 0);"></i></p>News</a>
+        <a href=""><p><i class="fa-solid fa-angle-down fa-xl" style="color: rgb(0, 0, 0);"></i></p>Show more</a>
+        
+        </div><hr>
+        <div class="youtube">
+        <h3>More from YouTube</h3>
+        <a href=""><p><i class="fa-brands fa-youtube fa-lg" style="color: rgb(249, 5, 5);"></i></p>YouTube Premium</a>
+        <a href=""><p><i class="fa-regular fa-circle-play fa-lg" style="color: rgb(249, 5, 5);"></i></p>YouTube Music</a>
+        <a href=""><p><i class="fa-brands fa-square-youtube fa-lg" style="color: rgb(249, 5, 5);"></i></p>YouTube Kids</a>
+        </div><hr>
+        <a href=""><p id="report"><i class="fa-regular fa-flag fa-lg" style="color: rgb(0, 0, 0);"></i></p>Report history</a>
+        <hr>
+        <p>© 2026 Google LLC</p>
+    </div>
+    <div class="container">
+        <div class="cards1">
+        <div class="card1">
+            <a href=""><img src="images/news.jpg" alt="">
+            <h3>PTI Long March Reaches Charsadda | ARY News 10 AM Headlines | 10th Oct 2026</h3>
+            <p>ARY News ✔  ▹16.4k  2h ago</p>
+            </a>
+        </div>
+        <div class="card2"><a href="">
+        <img src="images/tum hi ana.jpg" alt="">
+        <h3>Lyrical: Tum Hi Aana | Marjaavaan | Riteish D, Sidharth M, Tara S |Jubin Nautiyal,Payal Dev,Kunaal V</h3>
+        <p>T-Series ✔  ▹1.3B 6y ago</p>
+
+        </a></div>
+        <div class="card3"><a href="">
+        <img src="images/dil diya.jpg" alt="">
+        <h3>
+Dil Diyan Gallan Full Song | Tiger Zinda Hai | Salman Khan, Katrina Kaif, Atif Aslam, Vishal-Shekhar</h3>
+        <p>YRF✔  ▹55.2M 8y ago</p>
+</a></div></div>
+
+
+
+<div class="cards2">
+        <div class="card4"><a href="">
+         <img src="images/nana patekar.jpg" alt="">
+        <h3>उदय शेट्टी KA SWAG (नाना पाटेकर) | Best Scenes Of Nana Patekar | Uday Shetty Comedy | Welcome Movie</h3>
+        <p>Comedy Talkies ▹1.7M 3d ago</p>
+
+
+
+        </a></div>
+        <div class="card5"><a href="">
+            <img src="images/dard dilo.jpg" alt="">
+        <h3>Dard Dilo Ke (Slowed + Reverb) | Mohammed Irfan, Himesh Reshammiya | The Xpose | SR Lofi</h3>
+        <p>SR Lofi✔  ▹49M 1y ago</p>
+
+
+
+
+
+        </a></div>
+        <div class="card6"><a href="">
+            <img src="images/baap ko bhej.jpg" alt="">
+        <h3>Baap ko bhej, Tere bas ki baat nahi hai..!! Nana Patekar best dialogue</h3>
+        <p>Oberoi IBC  ▹45M 8y ago</p>
+</a></div></div>
+
+
+
+
+<div class="cards3">
+        <div class="card7"><a href="">
+            <img src="images/zameeno.jpg" alt="">
+        <h3>Zameen o Asman m har zuban se la ila nikla Slow+reverb| The peaceful place</h3>
+        <p>The peaceful place ▹4.7M 2y ago</p>
+
+
+
+
+
+        </a></div>
+        <div class="card8"><a href="">
+            <img src="images/geo news.jpg" alt="">
+        <h3>
+Emergency Declared in KP, Security Measures Tightened | Geo News</h3>
+        <p>Geo News✔  ▹4.9k 1h ago</p>
+
+
+
+
+
+        </a></div>
+        <div class="card9"><a href="">
+            <img src="images/shemaro.jpg" alt="">
+        <h3>
+मेरे पीछे सिर्फ मेरी किस्मत होगी डावर साब - Deewaar - Shashi Kapoor, Amitabh Bachchan - 4K</h3>
+        <p>Amitabh Bachchan ▹2.4M 3w ago</p>
+</a></div></div> 
+    </div>
+
+    
+</body>
+</html>
